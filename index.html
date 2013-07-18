@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+        <head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+		<meta content='app-id=663608621' name='apple-itunes-app' />
+
+		<title>Picter | Custom built photo sharing apps to interact with fans, customers, and attendees</title>
+
+		<script src="./js/jquery-1.8.0.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+
+		<link href="./css/bootstrap.min.css" rel="stylesheet" media="screen"></link>
+		<link href="./css/bootstrap-responsive.css" rel="stylesheet"></link>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'></link>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'></link>
+
+		<script>
+			// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			// })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			// ga('create', 'UA-41359957-1', 'goodnightcar.com');
+			// ga('send', 'pageview');
+		</script>
+
+                <style> 
+			body {
+				background-color: #ffffff;
+				padding: 0px;
+				margin: 0px;
+			}
+
+			.container {
+				padding: 40px 20px 120px 20px;
+			}	
+
+			#city {
+				position: relative;
+			}
+
+                        #city .container {
+				position: relative;
+				z-index: 100;
+                        }
+
+			#citygreen {
+				background-color: rgba(232,44,12,0.6);
+
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 10;
+			}
+
+			#citymap {
+				background-image:url('images/cover.png');
+				background-position: right;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 10;
+			}
+	
+			#eyecandy {
+				padding: 0px;
+			}
+
+				#eyecandy h1.hidden-phone {
+					color: #ffffff;
+					margin-top: 50px;
+				}
+
+				#eyecandy h1.visible-phone {
+					color: #ffffff;
+				}
+					#eyecandy h1 small {
+						color: #ffffff;
+					}
+
+				#eyecandy #blurb {
+					color: #FFFFFF;
+					font-size: 16px;
+					line-height: 1.5em;
+
+					margin-top: 30px;
+				}
+
+				#eyecandy #socials a {
+					padding: 0 10px 0 10px;
+				}
+
+				#eyecandy #once-we-get-approved {
+					color: #FFFFFF;
+					font-size: 14px;
+					line-height: 1.5em;
+
+					margin-top: 10px;
+				}
+
+				#eyecandy #stores {
+					padding: 20px 10px 0 10px;
+				}
+
+			p#contact-us {
+				margin: 20px 0 10px 0;
+
+				font-size: 20px;
+				line-height: 1.5em;
+				text-align: center;
+			}
+
+			.info {
+			}
+
+				#thescreens h2 {
+					text-align: center;
+				}
+
+				.info h4 {
+					padding: 20px 0 0 0 !important;
+				}
+
+				.info p {
+					padding: 0px 30px 10px 30px;
+				}
+
+			.as-seen-on {
+				text-align: center;
+			}
+
+			.as-seen-on img {
+				-webkit-filter: grayscale(100%);
+			}
+
+			.as-seen-on img:hover {
+				-webkit-filter: grayscale(0%);
+			}
+
+			.screenshot {
+				text-align: center;
+			}
+
+            </style>        
+
+        </head>
+
+	<body>
+
+		<div id="city">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div id="eyecandy" class="span6" style="text-align: center;">
+
+						<h1 class="hidden-phone">
+							Picter
+							<br/>
+							<small>
+								Custom built photo sharing apps to interact with fans, customers, and attendees
+							</small>
+						</h1>
+
+						<h1 class="visible-phone">
+							Picter
+							<br/>
+							<small>
+								Custom built photo sharing apps to interact with fans, customers, and attendees
+							</small>
+						</h1>
+
+						<!-- <p id="blurb">
+							Tap the map, click register, and done - GoodnightCar is the best way to register your car with Milwaukee's Night Parking Permission website.
+						</p> -->
+
+						<!-- <p id="socials">
+							<a href="http://www.twitter.com/goodnightcar" target="_blank">
+								<img src="./images/twitter.png" width="30" height="30"/>
+							</a>
+
+							<a href="http://www.facebook.com/goodnightcar" target="_blank">
+								<img src="./images/facebook.png" width="30" height="30"/>
+							</a>
+						</p>
+
+						<p id="stores">
+						
+							<p>	
+								<a id="app-store" href="https://itunes.apple.com/us/app/goodnightcar/id663608621?ls=1&mt=8" target="_blank">
+									<img src="./images/app_store.svg" width="150" />
+								</a>
+
+							</p>
+
+
+						</p> -->
+
+					</div>
+
+					<!-- <div class="span6" style="text-align: center;">
+					
+						<img src="./images/car.png" height="391">		
+
+					</div> -->
+
+				</div>
+
+
+			</div>
+
+			<div id="citymap">
+			</div>
+
+			<div id="citygreen">
+			</div>
+
+
+		</div>
+
+		<div id="thescreens" class="container">
+
+			<div class="row">
+
+				<div class="span4 info" style="text-align: center;">
+
+					<h4>All you need is an idea</h4>
+					<p>
+						You don't need to be a designer or developer to create an app with <strong>Picter</strong>. We have a lot creativity and experience here at <strong>Picter</strong> and we can take your idea and turn it into a working product.
+					</p>
+				</div>
+
+				<div class="span4 info" style="text-align: center;">
+					<h4>Quick turnaround</h4>
+					<p>
+						All we have to do is take your designs and your selected overlay images and put them with the main pieces of the app that we have pre-built. We then get your approval and ship the app off to the app stores. <em>Note: it will take more time for apps that need more customization</em>
+					</p>
+				</div>
+
+				<div class="span4 info" style="text-align: center;">
+					<h4>Give your users something fun</h4>
+					<p>
+						Your fans, customers, and attendees will have a great app to share their experiences at your venue with their social circle. The pictures they produce with your app will have be <strong>branded for your organization</strong>.
+					</p>
+				</div>
+
+			</div>
+
+			<div class="row">
+				
+				<div class="span12">
+					<hr/>
+				</div>
+		
+			</div>
+
+			<div class="row">
+				
+				<div class="span12">
+					<h2>What Our Apps Look Like</h2>
+				</div>
+		
+			</div>
+
+			<div class="row hidden-phone">
+
+				<div class="span4 screenshot">
+
+					<h3>Overlay Selection</h3>
+					<p>
+						This is where you can let your users select from any overlay images of your choosing. The most popular choices are <strong>event logos</strong>, <strong>team logos</strong>, or <strong>team mascots</strong>. But be creative, its your app.
+					</p>	
+
+				</div>
+
+				<div class="span4 screenshot">
+				
+					<h3>Sharing Options</h3>
+					<p>
+						Your users have options to give the picture a caption, save the image to their device, and also share their experience to a handfull of social networks.
+					</p>	
+
+				</div>
+
+				<div class="span4 screenshot">
+				
+					<h3>Public Interaction</h3>	
+					<p>
+						Each picture has a public page that anyone can view. This page gets all the attention and allows for fan, attendee, or customer interaction.
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="span4 screenshot">
+
+					<h3 class="visible-phone">Overlay Selection</h3>
+					<p class="visible-phone"> 
+						This is where you can let your users select from any overlay images of your choosing. The most popular choices are <strong>event logos</strong>, <strong>team logos</strong>, or <strong>team mascots</strong>. But be creative, its your app.
+					</p>
+					<img src="./images/screen_1.png" width="270">		
+
+				</div>
+
+				<div class="span4 screenshot">
+				
+					<h3 class="visible-phone">Sharing Options</h3>
+					<p class="visible-phone">
+						Your users have options to give the picture a caption, save the image to their device, and also share their experience to a handfull of social networks.
+					</p>
+					<img src="./images/screen_2.png" width="270">		
+
+				</div>
+
+				<div class="span4 screenshot">
+				
+					<h3 class="visible-phone">Public Interaction</h3>
+					<p class="visible-phone">
+						Each picture has a public page that anyone can view. This page gets all the attention and allows for fan, attendee, or customer interaction.
+					</p>
+					<img src="./images/screen_3.png" width="270">		
+
+				</div>
+
+			</div>
+
+			<div class="row">
+				
+				<div class="span12">
+					<hr/>
+				</div>
+		
+			</div>
+
+			<div class="row">
+
+				<div class="span12">
+
+					<h2>Reach Out To Us</h2>
+
+					<p id="contact-us">
+						Do you want a custom app build with <strong>Picter</strong> in your organization? Do you have questions for us?
+						<br/>
+						Drop us an email at <a href="mailto:team@getpicter.com">team@getpicter.com</a>,  we'll respond
+					</p>
+
+				</div>
+
+			</div>
+
+			<!-- <div class="row">
+				
+				<div class="span12">
+					<hr/>
+				</div>
+		
+			</div>
+
+			<div class="row">
+
+				<div class="span12">
+
+					<h2>As Seen On</h2>
+
+					<div class="row as-seen-on">
+						<a href="http://onmilwaukee.com/buzz/articles/ticketninja070813.html" target="_BLANK">
+							<img src="images/onmilwaukee.png" />
+						</a>
+						<a href="http://www.todaystmj4.com/multimedia/videos/?bctid=2551713936001" target="_BLANK">
+							<img src="images/tmj4_logo.png" />
+						</a>
+					</div>
+
+				</div>
+
+			</div> -->
+
+			<div class="row">
+				
+				<div class="span12">
+					<hr/>
+				</div>
+		
+			</div>
+
+			<div class="row">
+
+				<div class="span4 offset4" style="text-align: center;">
+
+					<h2>Josh Holtz</h2>
+					<p>
+						Creator/developer of <strong>Picter</strong> and Picter product's such as <a href="http://www.dinogram.com" target="_blank">Dinogram</a>
+					</p>
+					<p>
+						Creep more on Josh at <a href="http://joshholtz.com" target="_blank">joshholtz.com</a>
+					</p>
+					<p>
+						Want Josh to create something for you?
+						<br/>
+						Check out  <a href="http://rokkincat.com" target="_blank">RokkinCat</a>, a Milwaukee based software consulting company
+					</p>
+					<img src="./images/josh.png">		
+
+				</div>
+
+			</div>
+	
+		</div>
+
+        </body>
+</html>
